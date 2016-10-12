@@ -1,12 +1,11 @@
 #!/bin/bash
-File="port.txt"
+#author="JeeWin'
 
+File="port.txt"
 while read line
 do
     ports=$ports' '${line}
 done < ${File}
-
-#ports="80 81 82 443 7001 7011 8011 8080 8081 2375 6379 11211"
 
 flag=0
 for i in $ports
